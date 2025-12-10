@@ -10,8 +10,10 @@ export const dynamic = "force-dynamic";
 
 export async function GET(
     request: NextRequest,
-    { params }: { params: { audioId: string } }
+    props: { params: Promise<{ audioId: string }> }
 ) {
+  const params = await props.params;
+
   const session = await auth.api.getSession({
     headers: await headers(),
   });
