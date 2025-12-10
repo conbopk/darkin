@@ -36,7 +36,7 @@ Features:
 - 📝 Generated audio history
 - 🎨 Modern UI with Tailwind CSS, Shadcn UI
 
-## Models Used in Video
+## Models used in project
 - Voice-to-voice: [seed-vc](https://github.com/Plachtaa/seed-vc)
 - Text-to-speech fine-tuning: [StyleTTS2Finetune](https://github.com/IIEleven11/StyleTTS2FineTune)
 - Text-to-speech: [StyleTTS2](https://github.com/yl4579/StyleTTS2)
