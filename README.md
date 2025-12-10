@@ -44,3 +44,54 @@ Features:
 
 ## Setup
 Follow these steps to install and set up the project.
+
+### Clone the Repository and navigate to the project directory
+```bash
+git clone https://github.com/conbopk/darkin.git
+cd darkin
+```
+
+### Install Python
+Download and install Python if not already installed. Use the link below for guidance on installation: [Python Download](https://www.python.org/downloads/)
+
+### Clone the repos of open source models used for backend
+```bash
+# StyleTTS2 for text-to-speech
+git clone https://github.com/yl4579/StyleTTS2.git
+
+# StyleTTS2FineTune for text-to-speech fine-tuning and build dataset
+git clone https://github.com/IIEleven11/StyleTTS2FineTune.git
+
+# seed-vc for speech-to-speech
+git clone https://github.com/Plachtaa/seed-vc.git
+
+# Make-An-Audio for text-to-sfx
+git clone https://github.com/Text-to-Audio/Make-An-Audio.git
+```
+
+after cloning, cd into each dir of open source to proceed with setup according to the readme file.
+
+### Frontend
+
+Install dependencies:
+```bash
+cd elevenlabs-clone-frontend
+npm i
+```
+
+Run:
+```bash
+npm run dev
+```
+
+### Queue
+Run the local queue development server with Inngest:
+```bash
+cd elevenlabs-clone-frontend
+npm run inngest
+# or
+npx inngest-cli@latest dev
+```
+
+### Setup AWS for S3 and IAM User
+You have to set up your aws services for S3, IAM User for storage and upload user wav file.
